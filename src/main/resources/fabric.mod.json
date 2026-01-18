@@ -1,36 +1,31 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
-  "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "id": "streak-addon",
+  "version": "1.5.7",
+  "name": "TrouserStreak",
+  "description": "Golden Addon",
   "authors": [
-    "seasnail"
+    "xAndrey_"
   ],
-  "contact": {
-    "sources": "https://github.com/MeteorDevelopment/meteor-addon-template"
+
   },
-  "icon": "assets/template/icon.png",
+  "icon": "assets/icon/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "pwn.noobs.trouserstreak.Trouser"
     ]
   },
+  "accessWidener": "streak-addon.accesswidener",
   "mixins": [
-    "addon-template.mixins.json"
+    "streak.mixins.json"
   ],
   "custom": {
-    "meteor-client:color": "225,25,25",
-    "modmenu": {
-      "parent": {
-        "id": "meteor-client"
-      }
-    }
+    "meteor-client:color": "255,0,255"
   },
   "depends": {
     "java": ">=21",
-    "minecraft": ["${mc_version}"],
+    "minecraft": ">=${mc_version}",
     "meteor-client": "*"
   }
 }
