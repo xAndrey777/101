@@ -8,7 +8,6 @@
     "xAndrey_"
   ],
 
-  },
   "icon": "assets/icon/icon.png",
   "environment": "client",
   "entrypoints": {
